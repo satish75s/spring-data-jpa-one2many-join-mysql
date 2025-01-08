@@ -1,0 +1,51 @@
+post:
+http://localhost:8080/placeOrder
+request:
+{
+  "customer": {
+    "id": 0,
+    "name": "hello",
+    "email": "ss@gmail.com",
+    "gender": "m",
+    "products": [
+      {
+        "pid": 101,
+        "productName": "laptop",
+        "qty": 2,
+        "price": 3000
+      },
+      {
+        "pid": 102,
+        "productName": "books",
+        "qty": 20,
+        "price": 3000
+      }
+
+    ]
+  }
+}
+
+Response:
+{
+  "id": 3,
+  "name": "hello",
+  "email": "ss@gmail.com",
+  "gender": "m",
+  "products": [
+    {
+      "pid": 101,
+      "productName": "laptop",
+      "qty": 2,
+      "price": 3000
+    },
+    {
+      "pid": 102,
+      "productName": "books",
+      "qty": 20,
+      "price": 3000
+    }
+  ]
+}
+
+GET: http://localhost:8080/findAllOrders
+GET: http://localhost:8080/getInfo
